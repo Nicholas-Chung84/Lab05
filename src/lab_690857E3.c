@@ -1,12 +1,38 @@
 
 void copy(char *psource, char *ptarget, unsigned num_char)
 {
-    // TODO: write your code here
+    while (*psource != '\0' && num_char > 0)
+    {
+        *ptarget = *psource;
+        psource++;
+        ptarget++;
+        num_char--;
+    }
+
+    *ptarget = '\0';
 }
 
 void concatenate(char *psrc1, char *psrc2, char *ptarget, unsigned buffer_size)
 {
-    // TODO: write your code here
+    unsigned count = 0;
+
+    while (*psrc1 != '\0' && count < num_char)
+    {
+        *ptarget = *psrc1;
+        psrc1++;
+        ptarget++;
+        count++;
+    }
+
+    while (*psrc2 != '\0' && count < num_char)
+    {
+        *ptarget = *psrc2;
+        psrc2++;
+        ptarget++;
+        count++;
+    }
+
+    *ptarget = '\0';
 }
 
 // DO NOT change the code below
