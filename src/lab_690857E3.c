@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <string.h>
+
 
 void copy(char *psource, char *ptarget, unsigned num_char)
 {
